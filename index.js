@@ -6,7 +6,11 @@ window.onload = function() {
 
 
     function countSecond() {
-        get('stopwatch').innerHTML = hour +":" + minute + ":" + second;
+        var hourString = '';
+        var minutesString = '';
+        if(hour < 10) {hourString = '0' + hour };
+        if(minute < 10) {minutesString = '0' + minute };
+        get('stopwatch').innerHTML = hourString +":" + minutesString + ":" + second;
         second++;
         if (second == 60) {
             minute++;
