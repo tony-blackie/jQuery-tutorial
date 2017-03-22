@@ -1,3 +1,4 @@
+
 window.onload = function() {
     var second = 1; // counter
     var intervalHandler, intervalHandlerM, intervalHandlerH;
@@ -37,4 +38,3 @@ window.onload = function() {
 
 var get = function (id){
     return document.getElementById(id);
-}
